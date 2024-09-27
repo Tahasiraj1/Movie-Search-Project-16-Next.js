@@ -42,7 +42,7 @@ export default function MovieSearch() {
                 throw new Error(data.Error);
             }
             setMovieDetails(data);
-        } catch (error) {
+        } catch (error: any) {
             setError(error.message);
         } finally {
             setLoading(false);
