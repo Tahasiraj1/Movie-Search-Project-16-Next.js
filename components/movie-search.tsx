@@ -43,7 +43,9 @@ export default function MovieSearch() {
             }
             setMovieDetails(data);
         } catch (error: unknown) {
-            setError(error.message);
+               if (error instanceof Error) {
+                setError(error.message);
+            }
         } finally {
             setLoading(false);
         }
