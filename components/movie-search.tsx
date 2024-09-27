@@ -81,7 +81,7 @@ export default function MovieSearch() {
                     {/* Search button */}
                     <Button
                     onClick={handleSearch}
-                    className='px-4 py-2 bg-black text-white rounded-2xl hover:bg-gray-800 active:scale-95 transition-transform trandform duration-300'
+                    className='px-4 py-2 bg-black text-white rounded-2xl hover:bg-gray-800 active:scale-95 transition-transform transform duration-300'
                     >
                         Search
                     </Button>
